@@ -1,13 +1,17 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+
+import SideBar from './components/SideBar';
+import {BrowserRouter as Router} from "react-router-dom";
+ 
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
+    <div className="App card-body">
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+        <p className='btn-danger'>
+          Hello <code>src/App.js</code> and save to reload.
         </p>
         <a
           className="App-link"
@@ -15,9 +19,13 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          React
         </a>
-      </header>
+      </header> */}
+      {/* <Meal/> */}
+      <Router>
+      <SideBar/>
+      </Router>
     </div>
   );
 }
